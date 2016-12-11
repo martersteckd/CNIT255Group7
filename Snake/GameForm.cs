@@ -10,8 +10,8 @@ namespace Snake
 {
     public partial class GameForm : Form
     {
-        private List<Circle> Snake = new List<Circle>();
-        private Circle food = new Circle();
+        private List<Food> Snake = new List<Food>();
+        private Food food = new Food();
         private int currentTime;
 
         public GameForm()
@@ -75,7 +75,7 @@ namespace Snake
 
             //Create new player object
             Snake.Clear();
-            Circle head = new Circle {X = 10, Y = 5};
+            Food head = new Food {X = 10, Y = 5};
             Snake.Add(head);
 
             label2.Text = Settings.Time.ToString();
@@ -97,7 +97,7 @@ namespace Snake
             int maxYPos = pbCanvas.Size.Height / Settings.Height;
 
             Random random = new Random();
-            food = new Circle {X = random.Next(0, maxXPos), Y = random.Next(0, maxYPos)};
+            food = new Food {X = random.Next(0, maxXPos), Y = random.Next(0, maxYPos)};
         }
 
 
@@ -264,7 +264,7 @@ namespace Snake
         private void Eat()
         {
             //Add circle to body
-            Circle circle = new Circle
+            Food circle = new Food
             {
                 X = Snake[Snake.Count - 1].X,
                 Y = Snake[Snake.Count - 1].Y
