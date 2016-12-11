@@ -61,6 +61,7 @@
     </Compile>
     <Compile Include="Input.cs" />
     <Compile Include="JsonHelper.cs" />
+    <Compile Include="Name.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomOrgApiClient.cs" />
