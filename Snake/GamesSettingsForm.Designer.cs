@@ -39,6 +39,12 @@
             this.btnPreviewSnakeColor = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.cboDifficulty = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.txtMiddleI = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnStartGame
@@ -55,7 +61,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 99);
+            this.label1.Location = new System.Drawing.Point(12, 206);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 20);
             this.label1.TabIndex = 1;
@@ -63,28 +69,28 @@
             // 
             // txtR
             // 
-            this.txtR.Location = new System.Drawing.Point(119, 99);
+            this.txtR.Location = new System.Drawing.Point(119, 206);
             this.txtR.Name = "txtR";
             this.txtR.Size = new System.Drawing.Size(45, 20);
             this.txtR.TabIndex = 2;
             // 
             // txtG
             // 
-            this.txtG.Location = new System.Drawing.Point(170, 99);
+            this.txtG.Location = new System.Drawing.Point(170, 206);
             this.txtG.Name = "txtG";
             this.txtG.Size = new System.Drawing.Size(45, 20);
             this.txtG.TabIndex = 3;
             // 
             // txtB
             // 
-            this.txtB.Location = new System.Drawing.Point(221, 99);
+            this.txtB.Location = new System.Drawing.Point(221, 206);
             this.txtB.Name = "txtB";
             this.txtB.Size = new System.Drawing.Size(45, 20);
             this.txtB.TabIndex = 4;
             // 
             // btnRandSnakeColor
             // 
-            this.btnRandSnakeColor.Location = new System.Drawing.Point(272, 97);
+            this.btnRandSnakeColor.Location = new System.Drawing.Point(272, 204);
             this.btnRandSnakeColor.Name = "btnRandSnakeColor";
             this.btnRandSnakeColor.Size = new System.Drawing.Size(100, 23);
             this.btnRandSnakeColor.TabIndex = 5;
@@ -105,7 +111,7 @@
             // btnPreviewSnakeColor
             // 
             this.btnPreviewSnakeColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPreviewSnakeColor.Location = new System.Drawing.Point(408, 85);
+            this.btnPreviewSnakeColor.Location = new System.Drawing.Point(408, 192);
             this.btnPreviewSnakeColor.Name = "btnPreviewSnakeColor";
             this.btnPreviewSnakeColor.Size = new System.Drawing.Size(75, 50);
             this.btnPreviewSnakeColor.TabIndex = 7;
@@ -117,7 +123,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 172);
+            this.label3.Location = new System.Drawing.Point(12, 279);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(132, 20);
             this.label3.TabIndex = 8;
@@ -133,16 +139,73 @@
             "Medium",
             "Hard",
             "Extreme"});
-            this.cboDifficulty.Location = new System.Drawing.Point(150, 172);
+            this.cboDifficulty.Location = new System.Drawing.Point(150, 279);
             this.cboDifficulty.Name = "cboDifficulty";
             this.cboDifficulty.Size = new System.Drawing.Size(121, 24);
             this.cboDifficulty.TabIndex = 9;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(22, 53);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(90, 20);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "First Name:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(12, 79);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(100, 20);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Middle Initial:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(13, 105);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(90, 20);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Last Name:";
+            // 
+            // txtFirstName
+            // 
+            this.txtFirstName.Location = new System.Drawing.Point(119, 53);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(100, 20);
+            this.txtFirstName.TabIndex = 13;
+            // 
+            // txtMiddleI
+            // 
+            this.txtMiddleI.Location = new System.Drawing.Point(119, 79);
+            this.txtMiddleI.Name = "txtMiddleI";
+            this.txtMiddleI.Size = new System.Drawing.Size(100, 20);
+            this.txtMiddleI.TabIndex = 14;
+            // 
+            // txtLastName
+            // 
+            this.txtLastName.Location = new System.Drawing.Point(119, 105);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(100, 20);
+            this.txtLastName.TabIndex = 15;
             // 
             // GamesSettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(544, 382);
+            this.Controls.Add(this.txtLastName);
+            this.Controls.Add(this.txtMiddleI);
+            this.Controls.Add(this.txtFirstName);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.cboDifficulty);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnPreviewSnakeColor);
@@ -174,5 +237,11 @@
         private System.Windows.Forms.Button btnPreviewSnakeColor;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cboDifficulty;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtFirstName;
+        private System.Windows.Forms.TextBox txtMiddleI;
+        private System.Windows.Forms.TextBox txtLastName;
     }
 }
