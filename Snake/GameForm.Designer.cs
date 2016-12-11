@@ -45,6 +45,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.clockTimer = new System.Windows.Forms.Timer(this.components);
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblHS1 = new System.Windows.Forms.Label();
+            this.lblHS2 = new System.Windows.Forms.Label();
+            this.lblHS3 = new System.Windows.Forms.Label();
+            this.lblHS4 = new System.Windows.Forms.Label();
+            this.lblHS5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbCanvas)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -97,7 +103,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(939, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(1168, 29);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -183,11 +189,77 @@
             // 
             this.clockTimer.Tick += new System.EventHandler(this.clockTimer_Tick);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(934, 51);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(222, 37);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "High Scores: ";
+            // 
+            // lblHS1
+            // 
+            this.lblHS1.AutoSize = true;
+            this.lblHS1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHS1.Location = new System.Drawing.Point(934, 101);
+            this.lblHS1.Name = "lblHS1";
+            this.lblHS1.Size = new System.Drawing.Size(44, 37);
+            this.lblHS1.TabIndex = 11;
+            this.lblHS1.Text = "1.";
+            // 
+            // lblHS2
+            // 
+            this.lblHS2.AutoSize = true;
+            this.lblHS2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHS2.Location = new System.Drawing.Point(934, 138);
+            this.lblHS2.Name = "lblHS2";
+            this.lblHS2.Size = new System.Drawing.Size(46, 37);
+            this.lblHS2.TabIndex = 12;
+            this.lblHS2.Text = "2.";
+            // 
+            // lblHS3
+            // 
+            this.lblHS3.AutoSize = true;
+            this.lblHS3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHS3.Location = new System.Drawing.Point(934, 175);
+            this.lblHS3.Name = "lblHS3";
+            this.lblHS3.Size = new System.Drawing.Size(46, 37);
+            this.lblHS3.TabIndex = 13;
+            this.lblHS3.Text = "3.";
+            // 
+            // lblHS4
+            // 
+            this.lblHS4.AutoSize = true;
+            this.lblHS4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHS4.Location = new System.Drawing.Point(934, 212);
+            this.lblHS4.Name = "lblHS4";
+            this.lblHS4.Size = new System.Drawing.Size(46, 37);
+            this.lblHS4.TabIndex = 14;
+            this.lblHS4.Text = "4.";
+            // 
+            // lblHS5
+            // 
+            this.lblHS5.AutoSize = true;
+            this.lblHS5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHS5.Location = new System.Drawing.Point(934, 249);
+            this.lblHS5.Name = "lblHS5";
+            this.lblHS5.Size = new System.Drawing.Size(46, 37);
+            this.lblHS5.TabIndex = 15;
+            this.lblHS5.Text = "5.";
+            // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(939, 592);
+            this.ClientSize = new System.Drawing.Size(1168, 592);
+            this.Controls.Add(this.lblHS5);
+            this.Controls.Add(this.lblHS4);
+            this.Controls.Add(this.lblHS3);
+            this.Controls.Add(this.lblHS2);
+            this.Controls.Add(this.lblHS1);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblTime);
             this.Controls.Add(this.label4);
@@ -231,6 +303,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer clockTimer;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblHS1;
+        private System.Windows.Forms.Label lblHS2;
+        private System.Windows.Forms.Label lblHS3;
+        private System.Windows.Forms.Label lblHS4;
+        private System.Windows.Forms.Label lblHS5;
     }
 }
 
